@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Love</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section id="sectionOne" class="container">
+      <ul class="list">
+        <li>
+          <a href="#" class="logoTitle">Movie love</a>
+        </li>
+        <li>
+          <ul class="flex">
+            <li>
+              <a href="#" class="menu active">Home</a>
+            </li>
+            <li>
+              <a href="./page/films.html" class="menu">Films</a>
+            </li>
+            <li>
+              <a href="./page/serials.html" class="menu"> Serials </a>
+            </li>
+            <li>
+              <a href="./page/cartoons.html" class="menu"> Cartoons</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="flex">
+            <div class="flex">
+              <input type="text" id="search" />
+              <img id="btn" src="./icon/search.svg" alt="" />
+            </div>
+            <img class="image profil" src="./icon/profil.svg" alt="Prodil" />
+          </div>
+        </li>
+      </ul>
+
+      <div class="content">
+        <h1 class="newFilmTitle">New Film "Joker"</h1>
+        <p class="newFilmText">
+          "Joker" is a psychological thriller that tells the story of Arthur
+          Fleck, a struggling comedian who spirals into madness. The film
+          explores how a neglected and cruel society pushes him to become the
+          infamous Joker. Joaquin Phoenix’s powerful performance brings a
+          haunting depth to the character, making the movie a gripping
+          exploration of mental illness and isolation.
+        </p>
+        <input type="button" class="button" value="Watch">
+      </div>
+    </section>
+
+    <section id="sectionTwo" class="container">
+        <ul class="flex films">
+            <li>
+                <a href="#all">All</a>
+            </li>
+            <li>
+                <a href="#popular">Popular</a>
+            </li>
+            <li>
+                <a href="#new">New</a>
+            </li>
+            <li>
+                <a href="#other">Other</a>
+            </li>
+        </ul>
+
+        <div id="all">
+            <h1 class="menuBottom title">All</h1>
+            <div id="cardsAll"></div>
+        </div>
+        <div id="popular">
+            <h1 class="menuBottom title">Popular</h1>
+            <div id="cardsPopular"></div>
+        </div>
+        <div id="new">
+            <h1 class="menuBottom title">New</h1>
+            <div id="cardsNew"></div>
+        </div>
+        <div id="other">
+            <h1 class="menuBottom title">Other</h1>
+            <div id="cardsOther"></div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

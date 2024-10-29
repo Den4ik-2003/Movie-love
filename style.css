@@ -1,0 +1,303 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#sectionOne {
+  height: 100vh;
+  background: url(./image/bg-joker.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  padding: 0 10%;
+}
+
+ul {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+input {
+  outline: 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding-top: 25px;
+}
+
+.logoTitle {
+  color: #1bfd9c;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.menu {
+  font-size: 20px;
+  color: #fff;
+  margin-right: 50px;
+  transition: 0.5s;
+}
+
+.active {
+  color: #1bfd9c;
+}
+
+.menu:hover {
+  color: #1bfd9c;
+  border-bottom: 2px solid #1bfd9c;
+}
+
+#search {
+  margin-right: 5px;
+  border-radius: 5px;
+  height: 20px;
+  border: 1px solid #1bfd9c;
+}
+
+.image {
+  width: 40px;
+}
+
+#btn {
+  cursor: pointer;
+}
+
+.profil {
+  margin-left: 20px;
+}
+
+.content {
+  width: 30%;
+  margin-left: 60%;
+  margin-top: 7%;
+}
+
+.newFilmTitle {
+  font-size: 50px;
+  color: #1bfd9c;
+  margin: 0;
+}
+
+.newFilmText {
+  color: #fff;
+  opacity: 0.7;
+  margin-top: 15px;
+}
+
+.button {
+  --green: #1bfd9c;
+  font-size: 20px;
+  padding: 0.7em 2.7em;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--green);
+  background: linear-gradient(
+    to right,
+    rgba(27, 253, 156, 0.1) 1%,
+    transparent 40%,
+    transparent 60%,
+    rgba(27, 253, 156, 0.1) 100%
+  );
+  color: var(--green);
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4),
+    0 0 9px 3px rgba(27, 253, 156, 0.1);
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #82ffc9;
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6),
+    0 0 9px 3px rgba(27, 253, 156, 0.2);
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform 0.4s ease-in-out;
+  background: linear-gradient(
+    to right,
+    transparent 1%,
+    rgba(27, 253, 156, 0.1) 40%,
+    rgba(27, 253, 156, 0.1) 60%,
+    transparent 100%
+  );
+}
+
+.button:hover:before {
+  transform: translateX(15em);
+}
+
+/* ---------------------------- */
+#sectionTwo {
+  background-color: #020b10;
+  margin: 0;
+}
+
+.films {
+  padding-top: 25px;
+}
+
+.films li {
+  width: 100px;
+  text-align: center;
+  margin-right: 50px;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 50px;
+  border: 2px solid #ffffff74;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.films li:hover {
+  border: 2px solid #fff;
+}
+
+.films li a {
+  color: white;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.films li:hover a {
+  color: #fff;
+  opacity: 1;
+}
+
+#cardsAll,
+#cardsPopular,
+#cardsNew,
+#cardsOther,
+#films,
+#serials,
+#cartoons,
+#searches {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+#cardsAll div,
+#cardsPopular div,
+#cardsNew div,
+#cardsOther div,
+#films div,
+#serials div,
+#cartoons div,
+#searches div {
+  width: 320px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+#searches {
+  justify-content: space-between;
+}
+
+.title {
+  color: #1bfd9c;
+  font-size: 35px;
+}
+
+.films,
+.serials,
+.cartoons {
+  color: #1bfd9c;
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+  padding: 30px 0;
+}
+
+#serachesContainer {
+  padding: 50px;
+}
+
+.bgc {
+  background-color: #000;
+}
+
+#arrow {
+  width: 30px;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.title {
+  color: white;
+  font-size: 30px;
+  width: 300px;
+  margin: 0;
+}
+
+.text {
+  color: white;
+  font-size: 25px;
+  margin: 0;
+}
+
+.div {
+  display: flex;
+  align-items: center;
+  border: 2px solid grey;
+  margin: 50px;
+  padding: 35px;
+  border-radius: 10px;
+}
+
+.img {
+  width: 350px;
+  margin-right: 75px;
+}
+
+.divFlex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.menuBottom {
+  margin-bottom: 15px;
+}
+
+.divBorder {
+  border: 2px solid grey;
+  padding: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
